@@ -13,9 +13,16 @@ main {
   margin: auto;
   width: 50%;
   padding: 20px;
+
+  h4 {
+	text-align: center;
+	font-size: 1.5em;
+  }
 }
 
 main > h1 {
   text-align: center;
   font-size: 3.5em;
+  font-style: italic;
+  font-family: 'Palatino', serif
 }
