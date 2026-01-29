@@ -36,8 +36,15 @@
 			tellus, pellentesque id lacus a, euismod tristique nulla. Cras nec ante at elit tincidunt pretium tincidunt sed nulla.
 			Sed vitae velit non purus consectetur congue vel ut mauris. Nam et nisi aliquam, hendrerit dui a, sagittis leo.
 		</p>
+		<p class="courier">Loading content from the API: <b id="name">...</b></p>
 	</div>
   </main>
 </body>
+<script>
+	(async function() {
+		const { text } = await( await fetch(`/api/message`)).json();
+		document.querySelector('#name').textContent = text;
+	}());
+</script>
 
 </html>
